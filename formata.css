@@ -1,0 +1,196 @@
+/* Reset Básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos do Corpo */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #e4c7c7;
+}
+
+/* Estilos de Títulos */
+h1 {
+  font-size: 2.5em;
+  color: #D95D02;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h3 {
+  position: relative;
+  font-size: 1.5em;
+  color: #6A6A6A;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: -0.5%;
+}
+
+/* Linhas Decorativas */
+.risco1, .risco2, .risco3, .risco4 {
+  position: absolute;
+  height: 8px;
+  background-color: #F4A30E;
+}
+
+.risco1 {
+  top: 15%;
+  left: 0;
+  width: 400px;
+  z-index: -1;
+}
+
+.risco2 {
+  top: 15%;
+  left: 68.5%;
+  width: 400px;
+  z-index: -1;
+}
+
+.risco3 {
+  bottom: 15%;
+  left: 69%;
+  width: 390px;
+}
+
+.risco4 {
+  bottom: 15%;
+  left: 0;
+  width: 430px;
+}
+
+/* Estilos do Botão */
+button {
+  font-family: "Irish Grover", system-ui;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 8%;
+  width: 200px;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #F4A30E;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #b08e14;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+button:active {
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilos das Patas */
+.pata img, 
+.pata2 img, 
+.pata3 img, 
+.pata4 img {
+  width: 30px; 
+  height: 30px; 
+}
+
+.pata {
+  position: fixed;
+  top: 9%;
+  left: 1%;
+}
+
+.pata2 {
+  position: fixed;
+  top: 9%;
+  left: 95%;
+}
+
+.pata3 {
+  position: fixed;
+  bottom: 7%;
+  left: 1%;
+}
+
+.pata4 {
+  position: fixed;
+  bottom: 7%;
+  left: 95%;
+}
+
+/* Estilos da Imagem Redonda */
+.imagem-redonda {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(214, 118, 8, 0.86));
+  border-radius: 50%; 
+  width: 300px; 
+  height: 300px;
+  object-fit: cover; 
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+}
+
+/* Estilos de Responsividade */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2em;
+  }
+
+  h3 {
+      font-size: 1.2em;
+  }
+
+  button {
+      width: 150px;
+  }
+
+  .imagem-redonda {
+      width: 200px;
+      height: 200px;
+  }
+
+  .pata img, 
+  .pata2 img, 
+  .pata3 img, 
+  .pata4 img {
+      width: 20px; 
+      height: 20px; 
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.8em;
+  }
+
+  h3 {
+      font-size: 1em;
+  }
+
+  button {
+      width: 120px;
+      font-size: 10px;
+  }
+
+  .imagem-redonda {
+      width: 150px;
+      height: 150px;
+  }
+
+  .risco1, .risco2, .risco3, .risco4 {
+      width: 200px; /* Ajusta o tamanho das linhas decorativas */
+  }
+}

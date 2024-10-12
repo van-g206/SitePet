@@ -1,0 +1,118 @@
+/* Estilos padrão */
+body {
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #e4c7c7;
+    position: relative; /* Para elementos absolutos */
+}
+
+#formulario-recuperacao-senha {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: #00000094;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 95%;
+    height: 30px;
+    border: solid 2px;
+    border-color: #000000;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background-color: #bb6809;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #865114;
+}
+
+.pet img {
+    width: 60px; 
+    height: 60px; 
+    position: absolute;
+    top: 14%;
+    left: 68%;
+}
+
+.patas1 img {
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    transform: rotate(-18deg);
+}
+    
+.patas2 img {
+    position: absolute;
+    top: 10%;
+    left: 62%;
+    transform: rotate(-8deg);
+}
+
+.patas1 img, .patas2 img {
+    width: 590px; 
+    height: 590px;
+}
+
+/* Media Query para telas pequenas (dispositivos móveis) */
+@media (max-width: 480px) {
+    #formulario-recuperacao-senha {
+        width: 90%; /* Ajusta a largura do formulário */
+        margin: 20px auto; /* Reduz a margem */
+    }
+
+    input[type="text"] {
+        height: 40px; /* Aumenta a altura dos inputs */
+    }
+
+    button[type="submit"] {
+        height: 50px; /* Aumenta a altura do botão */
+    }
+
+    .pet img {
+        width: 40px; 
+        height: 40px; 
+        top: 10%; /* Ajusta a posição */
+        left: 70%; /* Ajusta a posição */
+    }
+}
+
+/* Media Query para tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    #formulario-recuperacao-senha {
+        width: 70%; /* Ajusta a largura do formulário */
+        margin: 30px auto; /* Reduz a margem */
+    }
+
+    input[type="text"] {
+        height: 35px; /* Aumenta um pouco a altura dos inputs */
+    }
+
+    button[type="submit"] {
+        height: 45px; /* Aumenta a altura do botão */
+    }
+}
+
+/* Media Query para desktops */
+@media (min-width: 769px) {
+    #formulario-recuperacao-senha {
+        width: 50%; /* Mantém a largura padrão */
+    }
+}
