@@ -29,13 +29,14 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px; /* Ajuste a altura conforme necessário */
   margin: 20px 0; /* Espaço entre o cabeçalho e a galeria */
 }
 
 .image-redonda img {
-  width: 150px; /* Ajuste o tamanho conforme necessário */
-  height: 150px; /* Ajuste o tamanho conforme necessário */
+  width: 25vw; /* Usa uma unidade responsiva */
+  max-width: 150px; /* Tamanho máximo */
+  height: 25vw; /* Usa uma unidade responsiva */
+  max-height: 150px; /* Tamanho máximo */
   border-radius: 50%; /* Para tornar a imagem redonda */
   object-fit: cover; /* Garante que a imagem mantenha suas proporções */
 }
@@ -43,7 +44,7 @@ main {
 .buttonn {
   display: flex; /* Ativa flexbox */
   justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente, se necessário */
+  align-items: center; /* Centraliza verticalmente */
   margin: 20px 0; /* Espaço acima e abaixo da div */
 }
 
@@ -76,9 +77,10 @@ main {
   width: 100px;
   text-align: center;
   transition: transform 0.2s;
-  border-radius: 60%; /* Arredondar bordas */
+  border-radius: 10px; /* Arredondar bordas */
   overflow: hidden; /* Para garantir que as bordas arredondadas sejam aplicadas às imagens também */
 }
+
 .polaroid img {
   width: 100%;
   height: auto;
@@ -101,7 +103,6 @@ footer {
   color: white;
 }
 
-
 nav {
   background-color: #444;
   padding: 10px 0;
@@ -111,6 +112,7 @@ nav ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Permite que os itens da lista se movam para a próxima linha em telas pequenas */
 }
 
 nav ul li {
@@ -126,4 +128,17 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #f4f4f4;
+}
+
+/* Estilos responsivos adicionais */
+@media (max-width: 600px) {
+  .button {
+      width: 100%; /* Botão ocupa toda a largura em telas pequenas */
+      font-size: 14px; /* Tamanho da fonte reduzido */
+  }
+
+  .polaroid {
+      width: 80%; /* Largura maior em telas pequenas */
+      max-width: 300px; /* Largura máxima */
+  }
 }
