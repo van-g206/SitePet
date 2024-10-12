@@ -7,23 +7,29 @@
 
 /* Estilos do Corpo */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arial', sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #e91313;
+  background-color: #f9f9f9;
+}
+
+/* Estilos do Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Estilos do Cabeçalho */
 header {
   background-color: #4CAF50;
   color: white;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
 }
 
 nav ul li {
@@ -34,11 +40,16 @@ nav ul li {
 nav a {
   color: white;
   text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #e4e4e4;
 }
 
 /* Estilos das Seções */
 main {
-  padding: 20px;
+  padding: 20px 0;
 }
 
 section {
@@ -47,6 +58,7 @@ section {
 
 h2 {
   color: #4CAF50;
+  margin-bottom: 20px;
 }
 
 /* Estilos da Galeria */
@@ -62,11 +74,17 @@ h2 {
   border-radius: 5px;
   padding: 10px;
   text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .animal img {
   max-width: 100%;
   border-radius: 5px;
+}
+
+.animal:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos do Formulário */
@@ -89,12 +107,17 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
 }
 
 /* Estilos do Rodapé */
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 20px 0;
   background-color: #4CAF50;
   color: white;
 }
@@ -105,6 +128,8 @@ footer {
       display: block;
       margin: 5px 0;
   }
+
+  .animal {
+      margin: 10px 0;
+  }
 }
-
-

@@ -3,63 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adote um Amigo</title>
-    <link rel="stylesheet" href="formata.css">
+    <title>Site de Adoção de Animais</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header> 
-        <h1>Adote um Amigo</h1>
+
+<header>
+    <div class="container">
+        <h1>Adoção de Animais</h1>
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#animais">Animais</a></li>
+                <li><a href="#galeria">Galeria</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+</header>
 
-    <main>
-        <section id="sobre">
-            <h2>Sobre Nós</h2>
-            <p>Somos uma organização dedicada a ajudar animais em situação de abandono. Nosso objetivo é encontrar lares amorosos para esses animais.</p>
-        </section>
+<main class="container">
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Nosso objetivo é ajudar animais abandonados a encontrarem um lar amoroso. Junte-se a nós nesta causa!</p>
+    </section>
 
-        <section id="animais">
-            <h2>Animais Disponíveis para Adoção</h2>
-            <div class="galeria">
-                <div class="animal">
-                    <img src="img/cachorro1.jpg" alt="Cachorro disponível para adoção">
-                    <h3>Cachorro 1</h3>
-                </div>
-                <div class="animal">
-                    <img src="img/gato1.jpg" alt="Gato disponível para adoção">
-                    <h3>Gato 1</h3>
-                </div>
-                <div class="animal">
-                    <img src="img/cachorro2.jpg" alt="Cachorro disponível para adoção">
-                    <h3>Cachorro 2</h3>
-                </div>
-                <div class="animal">
-                    <img src="img/gato2.jpg" alt="Gato disponível para adoção">
-                    <h3>Gato 2</h3>
-                </div>
+    <section id="galeria">
+        <h2>Galeria de Animais</h2>
+        <div class="galeria">
+            <div class="animal">
+                <img src="img/cachorro1.jpg" alt="Cachorro 1">
+                <h3>Cachorro Feliz</h3>
             </div>
-        </section>
+            <div class="animal">
+                <img src="img/gato1.jpg" alt="Gato 1">
+                <h3>Gato Amável</h3>
+            </div>
+            <div class="animal">
+                <img src="img/cachorro2.jpg" alt="Cachorro 2">
+                <h3>Cachorro Carinhoso</h3>
+            </div>
+            <div class="animal">
+                <img src="img/gato2.jpg" alt="Gato 2">
+                <h3>Gato Brincalhão</h3>
+            </div>
+        </div>
+    </section>
 
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Para mais informações sobre adoção, entre em contato conosco!</p>
-            <form>
-                <input type="text" placeholder="Seu Nome" required>
-                <input type="email" placeholder="Seu Email" required>
-                <textarea placeholder="Sua Mensagem" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu Email" required>
+            <textarea placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</main>
 
-    <footer>
-        <p>&copy; 2024 Adote um Amigo. Todos os direitos reservados.</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 Adoção de Animais. Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>
