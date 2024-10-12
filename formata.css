@@ -1,77 +1,129 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
 
 body {
-  margin: 0;
-  background-color: #1a1a1a;
-  color: $text-color;
-  font-family: "Inter", sans-serif;
-}
-
-nav {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  z-index: 50;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 36px;
-  font-weight: 500;
-  background-color: rgba(26, 26, 26, 0.9);
+  flex-direction: column;
 }
 
-
-
-.indicator {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 5px;
-  z-index: 60;
-  background-color: red;
+header {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
 }
 
-.details {
-  position: relative;
-  margin: 80px 0 40px;
+main {
+  flex: 1; /* Faz o main ocupar o espaço restante */
   padding: 20px;
 }
 
-.place-box .text {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
+.image-redonda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Ajuste a altura conforme necessário */
+  margin: 20px 0; /* Espaço entre o cabeçalho e a galeria */
 }
 
-.desc {
-  margin-top: 16px;
-  width: 100%;
+.image-redonda img {
+  width: 150px; /* Ajuste o tamanho conforme necessário */
+  height: 150px; /* Ajuste o tamanho conforme necessário */
+  border-radius: 50%; /* Para tornar a imagem redonda */
+  object-fit: cover; /* Garante que a imagem mantenha suas proporções */
 }
 
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+.buttonn {
+  display: flex; /* Ativa flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente, se necessário */
+  margin: 20px 0; /* Espaço acima e abaixo da div */
+}
+
+.button {
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  color: white; /* Cor do texto */
+  background-color: #333; /* Cor de fundo */
+  border: none; /* Remove borda padrão */
+  border-radius: 5px; /* Arredonda as bordas */
+  cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+  transition: background-color 0.3s; /* Transição suave */
+}
+
+.button:hover {
+  background-color: #555; /* Cor ao passar o mouse */
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
-.animal {
-  background-color: #2a2a2a;
-  border-radius: 5px;
-  padding: 10px;
+.polaroid {
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100px;
   text-align: center;
   transition: transform 0.2s;
+  border-radius: 60%; /* Arredondar bordas */
+  overflow: hidden; /* Para garantir que as bordas arredondadas sejam aplicadas às imagens também */
+}
+.polaroid img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
 }
 
-.animal img {
-  max-width: 100%;
-  border-radius: 5px;
+.polaroid p {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.polaroid:hover {
+  transform: scale(1.05);
 }
 
 footer {
   text-align: center;
   padding: 20px 0;
-  background-color: #1a1a1a;
+  background: #333;
   color: white;
+}
+
+
+nav {
+  background-color: #444;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f4f4f4;
 }
