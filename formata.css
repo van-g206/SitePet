@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500&display=swap");
 
-$primary-color: #ecad29;
-$text-color: #FFFFFFDD;
-
 body {
   margin: 0;
   background-color: #1a1a1a;
@@ -31,7 +28,7 @@ nav {
   top: 0;
   height: 5px;
   z-index: 60;
-  background-color: $primary-color;
+  background-color: red;
 }
 
 .details {
