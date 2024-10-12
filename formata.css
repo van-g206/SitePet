@@ -12,6 +12,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  overflow: auto;
 }
 
 header {
@@ -95,7 +96,6 @@ main {
   justify-content: center;
   gap: 20px;
 }
-
 
 
 .polaroid {
