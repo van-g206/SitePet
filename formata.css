@@ -103,7 +103,7 @@ main {
   width: 100px;
   text-align: center;
   transition: transform 0.2s;
-  border-radius: 10px; 
+  border-radius: 50%; 
   overflow: hidden; 
 }
 
