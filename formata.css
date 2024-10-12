@@ -21,10 +21,6 @@ header {
   text-align: center;
 }
 
-header h1 {
-  margin-bottom: 10px;
-}
-
 nav ul {
   list-style: none;
   padding: 0;
@@ -51,7 +47,6 @@ section {
 
 h2 {
   color: #4CAF50;
-  margin-bottom: 10px;
 }
 
 /* Estilos da Galeria */
@@ -96,10 +91,6 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #45a049;
-}
-
 /* Estilos do Rodapé */
 footer {
   text-align: center;
@@ -108,12 +99,8 @@ footer {
   color: white;
 }
 
-/* Estilos de Responsividade */
+/* Responsividade */
 @media (max-width: 768px) {
-  h2 {
-      font-size: 1.8em;
-  }
-
   nav ul li {
       display: block;
       margin: 5px 0;
