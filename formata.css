@@ -10,7 +10,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #f9f9f9;
+  background-color: #e91313;
 }
 
 /* Estilos do Cabeçalho */
@@ -106,3 +106,5 @@ footer {
       margin: 5px 0;
   }
 }
+
+
