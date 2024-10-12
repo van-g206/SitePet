@@ -6,6 +6,7 @@
 
 html, body {
   height: 100%;
+  font-family: Arial, sans-serif; /* Fonte padrão */
 }
 
 body {
@@ -20,89 +21,6 @@ header {
   padding: 1em 0;
 }
 
-main {
-  flex: 1; /* Faz o main ocupar o espaço restante */
-  padding: 20px;
-}
-
-.image-redonda {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0; /* Espaço entre o cabeçalho e a galeria */
-}
-
-.image-redonda img {
-  width: 25vw; /* Usa uma unidade responsiva */
-  max-width: 150px; /* Tamanho máximo */
-  height: 25vw; /* Usa uma unidade responsiva */
-  max-height: 150px; /* Tamanho máximo */
-  border-radius: 50%; /* Para tornar a imagem redonda */
-  object-fit: cover; /* Garante que a imagem mantenha suas proporções */
-}
-
-.buttonn {
-  display: flex; /* Ativa flexbox */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  margin: 20px 0; /* Espaço acima e abaixo da div */
-}
-
-.button {
-  padding: 10px 20px; /* Espaçamento interno */
-  font-size: 16px; /* Tamanho da fonte */
-  color: white; /* Cor do texto */
-  background-color: #333; /* Cor de fundo */
-  border: none; /* Remove borda padrão */
-  border-radius: 5px; /* Arredonda as bordas */
-  cursor: pointer; /* Muda o cursor ao passar sobre o botão */
-  transition: background-color 0.3s; /* Transição suave */
-}
-
-.button:hover {
-  background-color: #555; /* Cor ao passar o mouse */
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.polaroid {
-  background: white;
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100px;
-  text-align: center;
-  transition: transform 0.2s;
-  border-radius: 10px; /* Arredondar bordas */
-  overflow: hidden; /* Para garantir que as bordas arredondadas sejam aplicadas às imagens também */
-}
-
-.polaroid img {
-  width: 100%;
-  height: auto;
-  border-bottom: 1px solid #ccc;
-}
-
-.polaroid p {
-  padding: 10px;
-  font-size: 14px;
-}
-
-.polaroid:hover {
-  transform: scale(1.05);
-}
-
-footer {
-  text-align: center;
-  padding: 20px 0;
-  background: #333;
-  color: white;
-}
-
 nav {
   background-color: #444;
   padding: 10px 0;
@@ -112,7 +30,7 @@ nav ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* Permite que os itens da lista se movam para a próxima linha em telas pequenas */
+  flex-wrap: wrap;
 }
 
 nav ul li {
@@ -130,17 +48,96 @@ nav ul li a:hover {
   color: #f4f4f4;
 }
 
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.image-redonda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.image-redonda img {
+  width: 25vw; 
+  max-width: 150px; 
+  height: auto; 
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+
+.buttonn {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.button {
+  padding: 10px 20px; 
+  font-size: 16px; 
+  color: white; 
+  background-color: #333; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+.button:hover {
+  background-color: #555; 
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.polaroid {
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100px;
+  text-align: center;
+  transition: transform 0.2s;
+  border-radius: 10px; 
+  overflow: hidden; 
+}
+
+.polaroid img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.polaroid:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #333;
+  color: white;
+}
+
 /* Estilos responsivos adicionais */
 @media (max-width: 600px) {
+  .image-redonda img {
+      width: 50vw; /* Aumenta a largura da imagem redonda */
+      max-width: 100px; /* Ajusta o tamanho máximo */
+  }
+
   .button {
-      width: 100%; /* Botão ocupa toda a largura em telas pequenas */
-      font-size: 14px; /* Tamanho da fonte reduzido */
+      width: 100%; /* Botão ocupa toda a largura */
+      font-size: 14px; 
   }
 
   .polaroid {
-      width: 80%; /* Largura maior em telas pequenas */
-      max-width: 300px; /* Largura máxima */
+      width: 45%; /* Largura maior em telas pequenas */
+      max-width: 150px; /* Largura máxima */
   }
 }
-
-
