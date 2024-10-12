@@ -40,6 +40,8 @@ main {
   object-fit: cover; /* Garante que a imagem mantenha suas proporções */
 }
 
+
+
 .buttonn {
   display: flex; /* Ativa flexbox */
   justify-content: center; /* Centraliza horizontalmente */
