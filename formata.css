@@ -7,6 +7,11 @@
 
 /* Estilos do Corpo */
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -19,58 +24,35 @@ h1 {
   font-size: 2.5em;
   color: #D95D02;
   text-align: center;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 h3 {
-  position: relative;
   font-size: 1.5em;
   color: #6A6A6A;
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: -0.5%;
+  margin: 20px 0;
 }
 
 /* Linhas Decorativas */
 .risco1, .risco2, .risco3, .risco4 {
-  position: absolute;
   height: 8px;
   background-color: #F4A30E;
 }
 
-.risco1 {
-  top: 15%;
-  left: 0;
+.risco1, .risco2 {
   width: 400px;
-  z-index: -1;
+  margin: 0 auto;
 }
 
-.risco2 {
-  top: 15%;
-  left: 68.5%;
-  width: 400px;
-  z-index: -1;
-}
-
-.risco3 {
-  bottom: 15%;
-  left: 69%;
+.risco3, .risco4 {
   width: 390px;
-}
-
-.risco4 {
-  bottom: 15%;
-  left: 0;
-  width: 430px;
+  margin: 0 auto;
 }
 
 /* Estilos do Botão */
 button {
   font-family: "Irish Grover", system-ui;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 8%;
   width: 200px;
   padding: 1.3em 3em;
   font-size: 12px;
@@ -85,6 +67,7 @@ button {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   outline: none;
+  margin: 20px 0;
 }
 
 button:hover {
@@ -98,99 +81,42 @@ button:active {
 }
 
 /* Estilos das Patas */
-.pata img, 
-.pata2 img, 
-.pata3 img, 
-.pata4 img {
+.pata img, .pata2 img, .pata3 img, .pata4 img {
   width: 30px; 
   height: 30px; 
 }
 
-.pata {
+.pata, .pata2, .pata3, .pata4 {
   position: fixed;
-  top: 9%;
-  left: 1%;
 }
 
-.pata2 {
-  position: fixed;
-  top: 9%;
-  left: 95%;
-}
-
-.pata3 {
-  position: fixed;
-  bottom: 7%;
-  left: 1%;
-}
-
-.pata4 {
-  position: fixed;
-  bottom: 7%;
-  left: 95%;
-}
+.pata { top: 9%; left: 1%; }
+.pata2 { top: 9%; right: 1%; }
+.pata3 { bottom: 7%; left: 1%; }
+.pata4 { bottom: 7%; right: 1%; }
 
 /* Estilos da Imagem Redonda */
 .imagem-redonda {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(214, 118, 8, 0.86));
   border-radius: 50%; 
   width: 300px; 
   height: 300px;
   object-fit: cover; 
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 30%;
+  margin: 20px auto;
 }
 
 /* Estilos de Responsividade */
 @media (max-width: 768px) {
-  h1 {
-      font-size: 2em;
-  }
-
-  h3 {
-      font-size: 1.2em;
-  }
-
-  button {
-      width: 150px;
-  }
-
-  .imagem-redonda {
-      width: 200px;
-      height: 200px;
-  }
-
-  .pata img, 
-  .pata2 img, 
-  .pata3 img, 
-  .pata4 img {
-      width: 20px; 
-      height: 20px; 
-  }
+  h1 { font-size: 2em; }
+  h3 { font-size: 1.2em; }
+  button { width: 150px; }
+  .imagem-redonda { width: 200px; height: 200px; }
+  .pata img, .pata2 img, .pata3 img, .pata4 img { width: 20px; height: 20px; }
 }
 
 @media (max-width: 480px) {
-  h1 {
-      font-size: 1.8em;
-  }
-
-  h3 {
-      font-size: 1em;
-  }
-
-  button {
-      width: 120px;
-      font-size: 10px;
-  }
-
-  .imagem-redonda {
-      width: 150px;
-      height: 150px;
-  }
-
-  .risco1, .risco2, .risco3, .risco4 {
-      width: 200px; /* Ajusta o tamanho das linhas decorativas */
-  }
+  h1 { font-size: 1.8em; }
+  h3 { font-size: 1em; }
+  button { width: 120px; font-size: 10px; }
+  .imagem-redonda { width: 150px; height: 150px; }
+  .risco1, .risco2, .risco3, .risco4 { width: 200px; }
 }
