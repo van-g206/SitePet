@@ -4,66 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site de Adoção de Animais</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="formata.css">
 </head>
 <body>
-
-<header>
-    <div class="container">
-        <h1>Adoção de Animais</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-            <button class="entrar">Entrar</button>
-        </nav>
-    </div>
-</header>
-
-<main class="container">
-    <section id="sobre">
-        <h2>Sobre Nós</h2>
-        <p>Nosso objetivo é ajudar animais abandonados a encontrarem um lar amoroso. Junte-se a nós nesta causa!</p>
-    </section>
-
-    <section id="galeria">
-        <h2>Galeria de Animais</h2>
-        <div class="galeria">
-            <div class="animal">
-                <img src="img/cachorro1.jpg" alt="Cachorro 1">
-                <h3>Cachorro Feliz</h3>
+    <div class="indicator"></div>
+    
+    <nav>
+        <div>
+            <div class="svg-container">
+                <!-- Logo ou ícone pode ser adicionado aqui -->
             </div>
-            <div class="animal">
-                <img src="img/gato1.jpg" alt="Gato 1">
-                <h3>Gato Amável</h3>
+            <div>Adoção de Animais</div>
+        </div>
+        <div>
+            <div class="active">Home</div>
+            <div>Sobre</div>
+            <div>Galeria</div>
+            <div>Contato</div>
+            <div class="svg-container">
+                <!-- Ícone de busca pode ser adicionado aqui -->
             </div>
-            <div class="animal">
-                <img src="img/cachorro2.jpg" alt="Cachorro 2">
-                <h3>Cachorro Carinhoso</h3>
-            </div>
-            <div class="animal">
-                <img src="img/gato2.jpg" alt="Gato 2">
-                <h3>Gato Brincalhão</h3>
+            <div class="svg-container">
+                <!-- Ícone de usuário pode ser adicionado aqui -->
             </div>
         </div>
-    </section>
+    </nav>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <form>
-            <input type="text" placeholder="Seu Nome" required>
-            <input type="email" placeholder="Seu Email" required>
-            <textarea placeholder="Sua Mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-</main>
+    <main class="container">
+        <section id="sobre" class="details">
+            <div class="place-box">
+                <div class="text">Sobre Nós</div>
+            </div>
+            <div class="desc">
+                Nosso objetivo é ajudar animais abandonados a encontrarem um lar amoroso. Junte-se a nós nesta causa!
+            </div>
+        </section>
 
-<footer>
-    <p>&copy; 2024 Adoção de Animais. Todos os direitos reservados.</p>
-</footer>
+        <section id="galeria" class="details">
+            <div class="place-box">
+                <div class="text">Galeria de Animais</div>
+            </div>
+            <div class="galeria">
+                <div class="animal">
+                    <img src="img/cachorro1.jpg" alt="Cachorro 1">
+                    <h3>Cachorro Feliz</h3>
+                </div>
+                <div class="animal">
+                    <img src="img/gato1.jpg" alt="Gato 1">
+                    <h3>Gato Amável</h3>
+                </div>
+                <div class="animal">
+                    <img src="img/cachorro2.jpg" alt="Cachorro 2">
+                    <h3>Cachorro Carinhoso</h3>
+                </div>
+                <div class="animal">
+                    <img src="img/gato2.jpg" alt="Gato 2">
+                    <h3>Gato Brincalhão</h3>
+                </div>
+            </div>
+        </section>
 
+        <section id="contato" class="details">
+            <div class="place-box">
+                <div class="text">Contato</div>
+            </div>
+            <form>
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu Email" required>
+                <textarea placeholder="Sua Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Adoção de Animais. Todos os direitos reservados.</p>
+    </footer>
+
+    <div class="cover"></div>
 </body>
 </html>
