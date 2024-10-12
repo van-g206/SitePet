@@ -3,25 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de Adoção</title>
+    <title>Adote um Amigo</title>
     <link rel="stylesheet" href="formata.css">
 </head>
 <body>
     <header>
-        <h1>Site de Adoção</h1>
-        <h3>Um lugar para você encontrar um amigo</h3>
+        <h1>Adote um Amigo</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#animais">Animais</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <div class="image-container">
-            <img src="img/png/img1.png" alt="Imagem de Adoção" class="imagem-redonda">
-        </div>
-        <a href="forms/forms.html" class="button">Entrar</a>
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma organização dedicada a ajudar animais em situação de abandono. Nosso objetivo é encontrar lares amorosos para esses animais.</p>
+        </section>
+
+        <section id="animais">
+            <h2>Animais Disponíveis para Adoção</h2>
+            <div class="galeria">
+                <div class="animal">
+                    <img src="img/cachorro1.jpg" alt="Cachorro disponível para adoção">
+                    <h3>Cachorro 1</h3>
+                </div>
+                <div class="animal">
+                    <img src="img/gato1.jpg" alt="Gato disponível para adoção">
+                    <h3>Gato 1</h3>
+                </div>
+                <div class="animal">
+                    <img src="img/cachorro2.jpg" alt="Cachorro disponível para adoção">
+                    <h3>Cachorro 2</h3>
+                </div>
+                <div class="animal">
+                    <img src="img/gato2.jpg" alt="Gato disponível para adoção">
+                    <h3>Gato 2</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Para mais informações sobre adoção, entre em contato conosco!</p>
+            <form>
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu Email" required>
+                <textarea placeholder="Sua Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
+
     <footer>
-        <div class="pata"><img src="img/png/pata.png" alt="Pata"></div>
-        <div class="pata2"><img src="img/png/pata.png" alt="Pata"></div>
-        <div class="pata3"><img src="img/png/pata.png" alt="Pata"></div>
-        <div class="pata4"><img src="img/png/pata.png" alt="Pata"></div>
+        <p>&copy; 2024 Adote um Amigo. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
