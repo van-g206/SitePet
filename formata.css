@@ -30,6 +30,7 @@ header {
 
 nav ul {
   list-style: none;
+  display: inline-block;
 }
 
 nav ul li {
@@ -45,6 +46,22 @@ nav a {
 
 nav a:hover {
   color: #e4e4e4;
+}
+
+/* Estilos do Botão "Entrar" */
+button.entrar {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.entrar:hover {
+  background-color: #0056b3;
 }
 
 /* Estilos das Seções */
@@ -100,7 +117,7 @@ input, textarea {
   border-radius: 5px;
 }
 
-button {
+button[type="submit"] {
   padding: 10px;
   background-color: #4CAF50;
   color: white;
@@ -110,9 +127,7 @@ button {
   transition: background-color 0.3s;
 }
 
-
-
-button:hover {
+button[type="submit"]:hover {
   background-color: #45a049;
 }
 
