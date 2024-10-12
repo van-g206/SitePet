@@ -2,215 +2,26 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site de Adoção</title>
-
-    
-    <style>
-        /* Reset Básico */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Estilos do Corpo */
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 16px;
-            line-height: 1.5;
-            color: #333;
-            background-color: #e4c7c7;
-        }
-
-        /* Estilos do Contêiner Principal */
-        .container {
-            max-width: 1200px; /* Largura máxima */
-            margin: 0 auto; /* Centraliza o contêiner */
-            padding: 20px; /* Espaçamento interno */
-            text-align: center; /* Centraliza texto */
-        }
-
-        /* Estilos de Títulos */
-        h1 {
-            font-size: 2.5em;
-            color: #D95D02;
-            margin: 20px 0;
-        }
-
-        h3 {
-            font-size: 1.5em;
-            color: #6A6A6A;
-            margin: 20px 0;
-        }
-
-        /* Linhas Decorativas */
-        .risco1, .risco2, .risco3, .risco4 {
-            position: relative;
-            height: 8px;
-            background-color: #F4A30E;
-            width: 100%; /* Para ocupar toda a largura do contêiner */
-        }
-
-        .risco1 {
-            top: 15%;
-        }
-
-        .risco2 {
-            top: 15%;
-            left: 68.5%;
-        }
-
-        .risco3 {
-            bottom: 15%;
-            left: 69%;
-        }
-
-        .risco4 {
-            bottom: 15%;
-        }
-
-        /* Estilos do Botão */
-        button {
-            font-family: "Irish Grover", system-ui;
-            width: 200px;
-            padding: 1.3em 3em;
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 2.5px;
-            font-weight: 500;
-            color: #000;
-            background-color: #F4A30E;
-            border: none;
-            border-radius: 45px;
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-            outline: none;
-            margin: 20px 0; /* Espaçamento vertical */
-        }
-
-        button:hover {
-            background-color: #b08e14;
-            box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
-            color: #fff;
-        }
-
-        button:active {
-            box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.4);
-        }
-
-        /* Estilos das Patas */
-        .pata img, .pata2 img, .pata3 img, .pata4 img {
-            width: 30px; 
-            height: 30px; 
-        }
-
-        .pata {
-            position: fixed;
-            top: 9%;
-            left: 1%;
-        }
-
-        .pata2 {
-            position: fixed;
-            top: 9%;
-            left: 95%;
-        }
-
-        .pata3 {
-            position: fixed;
-            bottom: 7%;
-            left: 1%;
-        }
-
-        .pata4 {
-            position: fixed;
-            bottom: 7%;
-            left: 95%;
-        }
-
-        /* Estilos da Imagem Redonda */
-        .imagem-redonda {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(214, 118, 8, 0.86));
-            border-radius: 50%; 
-            max-width: 100%; /* Para garantir que não ultrapasse a largura do contêiner */
-            height: auto; /* Mantém a proporção */
-            width: 300px; 
-            height: 300px;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 30%;
-        }
-
-        /* Estilos de Responsividade */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2em;
-            }
-
-            h3 {
-                font-size: 1.2em;
-            }
-
-            button {
-                width: 150px;
-            }
-
-            .imagem-redonda {
-                width: 200px;
-                height: 200px;
-            }
-
-            .pata img, .pata2 img, .pata3 img, .pata4 img {
-                width: 20px; 
-                height: 20px; 
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.8em;
-            }
-
-            h3 {
-                font-size: 1em;
-            }
-
-            button {
-                width: 120px;
-                font-size: 10px;
-            }
-
-            .imagem-redonda {
-                width: 150px;
-                height: 150px;
-            }
-
-            .risco1, .risco2, .risco3, .risco4 {
-                width: 200px; /* Ajusta o tamanho das linhas decorativas */
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="formata.css">
 </head>
 <body>
-    <div class="container">
-        <img src="img/png/img1.png" alt="Imagem Redonda" class="imagem-redonda">
+    <header>
         <h1>Site de Adoção</h1>
-        <h3>Um lugar para você encontrar um Amigo</h3>
-
-        <div class="risco1"></div>
-        <div class="risco2"></div>
-        <div class="risco3"></div>
-        <div class="risco4"></div>
-
+        <h3>Um lugar para você encontrar um amigo</h3>
+    </header>
+    <main>
+        <div class="image-container">
+            <img src="img/png/img1.png" alt="Imagem de Adoção" class="imagem-redonda">
+        </div>
+        <a href="forms/forms.html" class="button">Entrar</a>
+    </main>
+    <footer>
         <div class="pata"><img src="img/png/pata.png" alt="Pata"></div>
         <div class="pata2"><img src="img/png/pata.png" alt="Pata"></div>
         <div class="pata3"><img src="img/png/pata.png" alt="Pata"></div>
         <div class="pata4"><img src="img/png/pata.png" alt="Pata"></div>
-
-        <a href="forms/forms.html"><button>Entrar</button></a>
-    </div>
+    </footer>
 </body>
 </html>
