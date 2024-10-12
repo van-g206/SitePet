@@ -40,8 +40,6 @@ main {
   object-fit: cover; /* Garante que a imagem mantenha suas proporções */
 }
 
-
-
 .buttonn {
   display: flex; /* Ativa flexbox */
   justify-content: center; /* Centraliza horizontalmente */
@@ -129,4 +127,3 @@ nav ul li a {
 nav ul li a:hover {
   color: #f4f4f4;
 }
-
