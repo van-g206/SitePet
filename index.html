@@ -4,67 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Site de Adoção</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="formata.css">
     
     <style>
-
-    body{
-        background-color: #e4c7c7;
-
+        body {
+            background-color: #e4c7c7;
+            font-family: 'Irish Grover', cursive;
+        }
+        .imagem-redonda {
+            border-radius: 50%;
+            max-width: 100%;
+        }
+        .anel-transparente {
+            border: 5px dashed white;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+        }
+        .pata img {
+            max-width: 50px;
+        }
+        h1, h3 {
+            text-align: center;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
 </head>
-<nav></nav>
 <body>
-<nav>
-   
+
+<nav class="w3-bar w3-light-grey">
+    <a href="#" class="w3-bar-item w3-button">Início</a>
+    <a href="#" class="w3-bar-item w3-button">Sobre</a>
+    <a href="#" class="w3-bar-item w3-button">Contato</a>
 </nav>
-    <img src="img/png/img1.png" alt="Imagem Redonda" class="imagem-redonda">
 
-    <!----------------------------------------------------------------------------->
+<img src="img/png/img1.png" alt="Imagem Redonda" class="imagem-redonda">
 
-    <h1>Site de Adoção </h1>
-    <h3>Um lugar para você encontrar um Amigo</h3>
-    
-    <!------------------------------------------------------------------------------>
+<h1>Site de Adoção</h1>
+<h3>Um lugar para você encontrar um amigo</h3>
 
+<div class="anel-transparente"></div> 
 
-    <div class="anel-transparente"></div> 
-    <div class="risco1"></div>
-    <div class="risco2"></div>
-    <div class="risco3"></div>
-    <div class="risco4"></div>
-
-   <!------------------------------------------------------------------------------->
-
-    <div class="pata">
-        <img src="img/png/pata.png"></img>
+<div class="w3-row">
+    <div class="w3-quarter">
+        <div class="pata">
+            <img src="img/png/pata.png" alt="Pata">
+        </div>
     </div>
-    <div class="pata2">
-        <img src="img/png/pata.png"></img>
+    <div class="w3-quarter">
+        <div class="pata2">
+            <img src="img/png/pata.png" alt="Pata">
+        </div>
     </div>
-    <div class="pata3">
-        <img src="img/png/pata.png"></img>
+    <div class="w3-quarter">
+        <div class="pata3">
+            <img src="img/png/pata.png" alt="Pata">
+        </div>
     </div>
-
-    <div class="pata4">
-        <img src="img/png/pata.png"></img>
+    <div class="w3-quarter">
+        <div class="pata4">
+            <img src="img/png/pata.png" alt="Pata">
+        </div>
     </div>
+</div>
 
+<div class="button-container">
+    <a href="forms/forms.html"><button class="w3-button w3-green">Entrar</button></a>
+</div>
 
-    <!------------------------------------------------------------------------------->
-
-    <a href="forms/forms.html"><button> Entrar </button></a>
-
-    <!------------------------------------------------------------------------------->
-
-    
 <main></main>
 
-    
-</body>
 <script src="main.js"></script>
+</body>
 </html>
