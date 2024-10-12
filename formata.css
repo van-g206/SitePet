@@ -8,119 +8,114 @@
 /* Estilos do Corpo */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #e4c7c7;
+  line-height: 1.6;
   color: #333;
-  text-align: center;
+  background-color: #f9f9f9;
 }
 
 /* Estilos do Cabeçalho */
 header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilos das Seções */
+main {
   padding: 20px;
 }
 
-h1 {
-  font-size: 2.5em;
-  color: #D95D02;
+section {
+  margin-bottom: 40px;
 }
 
-h3 {
-  font-size: 1.5em;
-  color: #6A6A6A;
+h2 {
+  color: #4CAF50;
+  margin-bottom: 10px;
 }
 
-/* Estilos do Main */
-main {
-  position: relative;
-  padding: 40px 20px;
+/* Estilos da Galeria */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-.image-container {
-  margin: 20px auto;
+.animal {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
 }
 
-.imagem-redonda {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(214, 118, 8, 0.86));
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
+.animal img {
+  max-width: 100%;
+  border-radius: 5px;
 }
 
-.button {
-  display: inline-block;
-  padding: 15px 30px;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #F4A30E;
-  border-radius: 45px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-  margin-top: 20px;
+/* Estilos do Formulário */
+form {
+  display: flex;
+  flex-direction: column;
 }
 
-.button:hover {
-  background-color: #b08e14;
+input, textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
 }
 
 /* Estilos do Rodapé */
 footer {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 20px;
-}
-
-.pata img {
-  width: 30px;
-  height: 30px;
+  text-align: center;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
 }
 
 /* Estilos de Responsividade */
 @media (max-width: 768px) {
-  h1 {
-      font-size: 2em;
+  h2 {
+      font-size: 1.8em;
   }
 
-  h3 {
-      font-size: 1.2em;
-  }
-
-  .imagem-redonda {
-      width: 200px;
-      height: 200px;
-  }
-
-  .button {
-      font-size: 14px;
-      padding: 10px 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-      font-size: 1.5em;
-  }
-
-  h3 {
-      font-size: 1em;
-  }
-
-  .imagem-redonda {
-      width: 150px;
-      height: 150px;
-  }
-
-  .button {
-      font-size: 12px;
-      padding: 8px 16px;
-  }
-
-  .pata img {
-      width: 20px;
-      height: 20px;
+  nav ul li {
+      display: block;
+      margin: 5px 0;
   }
 }
