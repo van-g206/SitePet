@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Pet</title>
+    <link rel="stylesheet" href="formAdocao.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body{
+            background-color: #e4c7c7;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../page1/page1.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="../galeria/galeria.html"><i class="fas fa-camera"></i> Galeria</a></li>
+                <li><a href="../perfil de usuário/perfil.html"><i class="fas fa-user"></i> Perfil</a></li>
+                <li><a href="../forms/formpet.html"><i class="fas fa-paw"></i> Cadastro de Pet</a></li>
+                <li><a id="logout" href="../index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </nav>
+      </header>
+    <main>
+
+        <div class="box">
+            <!-- Modal de Confirmação -->
+            <div id="confirmModal" class="modal">
+                <div class="modal-content">
+                  <p>Você confirma que o local está correto?</p>
+                  <button id="confirmYes">Sim</button>
+                  <button id="confirmNo">Não</button>
+                </div>
+              </div>
+            <form action="/adoption" method="POST">
+                <h2>Formulário de Adoção de Pets</h2>
+              
+                <!-- Informações do Adotante -->
+                <fieldset>
+                  <legend>Informações do Adotante</legend>
+                  
+                  <label for="nome">Nome Completo:</label>
+                  <input type="text" id="nome" name="nome" required>
+              
+                  <label for="email">E-mail:</label>
+                  <input type="email" id="email" name="email" required>
+              
+                  <label for="telefone">Telefone:</label>
+                  <input type="tel" id="telefone" name="telefone" required>
+              
+                  <label for="endereco">Endereço Completo:</label>
+                  <textarea id="endereco" name="endereco" required></textarea>
+                  <button type="button" onclick="openMap()">Ver no Mapa</button>
+              
+                  <label for="idade">Idade:</label>
+                  <input type="number" id="idade" name="idade" required min="18" max="120>
+              
+                  <label for="experiencia">Você já teve pets antes?</label>
+                  <select id="experiencia" name="experiencia">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                  </select>
+                </fieldset>
+              
+                <!-- Informações do Pet -->
+                <fieldset>
+                  <legend>Informações do Pet</legend>
+                  
+                  <label for="nomePet">Nome do Pet:</label>
+                  <input type="text" id="nomePet" name="nomePet" required>
+              
+                  <label for="tipo">Tipo de Pet:</label>
+                  <select id="tipo" name="tipo" required >
+                    <option ></option>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                  </select>
+              
+                  <label for="idadePet">Idade do Pet:</label>
+                  <input type="text" id="idadePet" name="idadePet" required>
+              
+                  <label for="justificativa">Justificativa de adoção:</label>
+                  <input type="text" id="jtf" name="jtf" required>
+              
+              
+                <!-- Botão de Envio -->
+                <button type="submit">Enviar Solicitação de Adoção</button>
+              </form>
+             
+        </div>
+    </main>
+</body>
+<script src="formAdocao.js" defer></script>
+</html>
