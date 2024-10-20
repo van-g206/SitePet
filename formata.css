@@ -4,37 +4,66 @@
   padding: 0;
 }
 
-
-
 html, body {
   height: 100%;
-  font-family: Arial, sans-serif; /* Fonte padrão */
+  font-family: Arial, sans-serif;
 }
-
 
 body {
   display: flex;
   flex-direction: column;
   overflow: auto;
+  background-color: #c9ae7d;
 }
 
 header {
-  background: #333;
   color: white;
   text-align: center;
   padding: 1em 0;
 }
 
 nav {
-  background-color: #444;
-  padding: 10px 0;
+  background-color: #1a1a1a;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact, #about {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  padding: 20px;
+  left: 75%;
+  top: 9%;
+  background-color: #f08204;
+  border-radius: 8px;
+  margin-top: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about {
+  background-color: #f0a500;
+}
+
+#contact h2, #about h2, #contact p, #about p, #about ul {
+  color: #000000;
+  line-height: 1.6;
+}
+
+nav .logo {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 nav ul {
   list-style-type: none;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 0;
 }
 
 nav ul li {
@@ -42,7 +71,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #ef8308;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
@@ -52,45 +81,55 @@ nav ul li a:hover {
   color: #f4f4f4;
 }
 
+.logo-icon {
+  background-color: #ef8308;
+  border-radius: 50%;
+  padding: 10px;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.content {
+  transition: height 0.3s ease;
+  margin-top: 20px;
+}
+
 main {
   flex: 1;
   padding: 20px;
+  margin-top: 100px;
 }
 
-.image-redonda {
+.header {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  background-color: #d3770f;
+}
+
+.carousel-inner {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 20px 0;
-}
-
-.image-redonda img {
-  width: 25vw; 
-  max-width: 150px; 
-  height: auto; 
-  border-radius: 50%; 
-  object-fit: cover; 
-}
-
-.buttonn {
-  display: flex;
   justify-content: center;
-  margin: 20px 0;
+  height: 100%;
 }
 
-.button {
-  padding: 10px 20px; 
-  font-size: 16px; 
-  color: white; 
-  background-color: #333; 
-  border: none; 
-  border-radius: 5px; 
-  cursor: pointer; 
-  transition: background-color 0.3s; 
+.carousel-inner img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-.button:hover {
-  background-color: #555; 
+.header img {
+  width: 25vw;
+  max-width: 90px;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
 .gallery {
@@ -100,7 +139,6 @@ main {
   gap: 20px;
 }
 
-
 .polaroid {
   background: white;
   border: 1px solid #ccc;
@@ -108,7 +146,8 @@ main {
   width: 100px;
   text-align: center;
   transition: transform 0.2s;
-  border-radius: 50%; 
+  border-radius: 10px;
+  border: solid 3px black;
   overflow: hidden; 
 }
 
@@ -124,25 +163,34 @@ main {
 
 footer {
   text-align: center;
-  padding: 20px 0;
-  background: #333;
+  padding: 1px;
+  background: #000000;
   color: white;
 }
 
-/* Estilos responsivos adicionais */
 @media (max-width: 600px) {
-  .image-redonda img {
-      width: 50vw; /* Aumenta a largura da imagem redonda */
-      max-width: 100px; /* Ajusta o tamanho máximo */
+  #contact, #about {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
   }
 
-  .button {
-      width: 100%; /* Botão ocupa toda a largura */
-      font-size: 14px; 
+  .header img {
+    width: 50vw;
+    max-width: 100px;
   }
 
   .polaroid {
-      width: 45%; /* Largura maior em telas pequenas */
-      max-width: 150px; /* Largura máxima */
+    width: 45%;
+    max-width: 150px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
   }
 }
