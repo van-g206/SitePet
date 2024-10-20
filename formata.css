@@ -168,7 +168,7 @@ footer {
   color: white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   #contact, #about {
     left: 50%;
     transform: translateX(-50%);
@@ -192,5 +192,29 @@ footer {
 
   nav ul li {
     margin: 10px 0;
+  }
+
+  body {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav .logo {
+    font-size: 20px;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .polaroid {
+    width: 90%;
+    max-width: 120px;
+  }
+
+  footer {
+    padding: 5px;
+    font-size: 14px;
   }
 }
