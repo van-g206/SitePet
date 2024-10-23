@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  background-color: #c9ae7d;
+}
+
+header {
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+nav {
+  background-color: #1a1a1a;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact, #about {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  padding: 20px;
+  left: 75%;
+  top: 9%;
+  background-color: #f08204;
+  border-radius: 8px;
+  margin-top: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about {
+  background-color: #f0a500;
+}
+
+#contact h2, #about h2, #contact p, #about p, #about ul {
+  color: #000000;
+  line-height: 1.6;
+}
+
+nav .logo {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ef8308;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f4f4f4;
+}
+
+.logo-icon {
+  background-color: #ef8308;
+  border-radius: 50%;
+  padding: 10px;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.content {
+  transition: height 0.3s ease;
+  margin-top: 20px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  background-color: #d3770f;
+}
+
+.carousel-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.carousel-inner img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.header img {
+  width: 25vw;
+  max-width: 90px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1px;
+  background: #000000;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  #contact, #about {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+  }
+
+  .header img {
+    width: 50vw;
+    max-width: 100px;
+  }
+
+  .polaroid {
+    width: 45%;
+    max-width: 150px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  body {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav .logo {
+    font-size: 20px;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .polaroid {
+    width: 90%;
+    max-width: 120px;
+  }
+
+  footer {
+    padding: 5px;
+    font-size: 14px;
+  }
+}

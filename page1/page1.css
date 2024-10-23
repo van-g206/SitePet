@@ -1,0 +1,157 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+
+/* Estilos globais */
+body {
+  font-family: Arial, sans-serif;
+  overflow: scroll;
+}
+
+/* Estilos de header */
+header {
+  background-color: #F4A30E;
+  color: #fff;
+  padding: 25px;
+  text-align: left;
+}
+
+.hamburger-menu {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+
+.hamburger-menu span {
+  display: flex;
+  width: 24px;
+  height: 4px;
+  background-color: #fff;
+  margin-bottom: 4px;
+  top: 5%;
+}
+
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F4A30E;
+  padding: 20px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  margin-left: 0%;
+  width: 300px;
+  list-style: none;
+}
+
+.nav-menu.show {
+  display: flex;
+}
+
+.nav-menu li {
+  margin-bottom: 10px;
+}
+
+.nav-menu a {
+  position: fixed;
+  left: 1%;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-menu a:hover {
+  color: #08d657;
+}
+
+.nav-menu a.active {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.nav-menu li {
+  list-style: none;
+  padding: 10px;
+}
+
+/* Estilos de container */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col-md-3 {
+  width: 25%;
+  margin: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.meta {
+  padding: 20px;
+  
+  
+}
+
+.meta h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.meta p {
+  position: relative;
+  font-size: 14px;
+  color: #666;
+  
+}
+
+.botao-adotar {
+  margin-top: 20px;
+}
+
+.botao-adotar button {
+  background-image:linear-gradient(to right, #e76c00, #904f15, #5a3210, #211408);
+  
+  color: #fff;
+  padding: 10px 20px;
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botao-adotar button:hover {
+  background-color: #64450b;
+}
